@@ -57,12 +57,11 @@ Repository:
 
 ## Currently Learning
 
-- Security Operations Center (SOC) workflows
-- SIEM log analysis
-- Threat detection
-- Incident response
-- Security+ certification preparation
-
+- Security Operations Center (SOC) workflows  
+- SIEM log analysis (Splunk)  
+- Threat detection  
+- Incident response  
+- CompTIA Security+ (SY0-701) preparation
 ---
 
 ## Connect With Me
