@@ -1,70 +1,132 @@
-# Hernan Pardo Gomez
+\## 🔍 Encoded PowerShell Detection Lab
 
-Cybersecurity Student | SOC Analyst in Training  
-Hands-on cybersecurity labs focused on threat detection, vulnerability analysis, and incident response.
 
----
 
-## About Me
+\### 📌 Objective
 
-I am a cybersecurity student and U.S. Navy veteran building hands-on experience in Security Operations, vulnerability analysis, and incident response.
 
-My focus is developing practical defensive and offensive security skills through lab environments using Kali Linux, Metasploit, Nmap, and security monitoring tools.
 
----
+Detect encoded PowerShell execution using Sysmon logs and Splunk.
 
-## Cybersecurity Skills
 
-- Network Reconnaissance
-- Vulnerability Identification
-- Basic Exploitation Techniques
-- Security Documentation
-- Network Traffic Analysis
-- SOC Investigation Workflow
 
 ---
 
-## Tools & Technologies
 
-- Kali Linux
-- Nmap
-- Metasploit Framework
-- Wireshark
-- VirtualBox
-- Linux Command Line
 
----
+\### 🛠️ Tools Used
 
-## Featured Cybersecurity Lab
 
-### Kali Linux vs Metasploitable Attack Simulation
 
-This lab demonstrates a real-world penetration testing workflow including reconnaissance, service enumeration, and exploitation of a vulnerable service.
+\* Windows 11 Virtual Machine
 
-Skills demonstrated:
+\* Sysmon (SwiftOnSecurity config)
 
-- Network scanning
-- Service enumeration
-- Vulnerability identification
-- Exploitation using Metasploit
-- Privilege verification
+\* Splunk Enterprise
 
-Repository:
+\* PowerShell
 
-➡️ https://github.com/HPardo-Portfolio/Pardo-soc-portfolio
+
 
 ---
 
-## Currently Learning
 
-- Security Operations Center (SOC) workflows  
-- SIEM log analysis (Splunk)  
-- Threat detection  
-- Incident response  
-- CompTIA Security+ (SY0-701) preparation
+
+\### ⚙️ Lab Setup
+
+
+
+\* Installed Sysmon with custom configuration
+
+\* Forwarded logs to Splunk
+
+\* Enabled process creation logging (Event ID 1)
+
+
+
 ---
 
-## Connect With Me
 
-LinkedIn  
-https://linkedin.com/in/hpardo-sec
+
+\### 💀 Attack Simulation
+
+
+
+Executed encoded PowerShell command:
+
+
+
+```
+
+powershell -enc SQBFAFgAIAAkAGUAbgB2ADoAdQBzAGUAcgBuAGEAbQBlAA==
+
+```
+
+
+
+---
+
+
+
+\### 🔎 Detection Query
+
+
+
+```
+
+index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
+
+| rex field=\_raw "<Data Name='CommandLine'>(?<cmdline>\[^<]+)"
+
+| search cmdline="\*-enc\*"
+
+| table \_time cmdline
+
+```
+
+
+
+---
+
+
+
+\### 📊 Findings
+
+
+
+\* Sysmon captured PowerShell execution
+
+\* Encoded command detected in Splunk
+
+\* Raw logs used for accurate field extraction
+
+
+
+---
+
+
+
+\### 🚨 Key Takeaways
+
+
+
+\* `-enc` is commonly used for obfuscation
+
+\* Raw log analysis is critical
+
+\* Regex helps extract hidden fields
+
+
+
+---
+
+
+
+\### 📸 Screenshots
+
+
+
+
+
+
+
