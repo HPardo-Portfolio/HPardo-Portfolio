@@ -76,8 +76,8 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 | search cmdline="*-enc*"
 | table _time cmdline
 
-
 ```
+
 
 
 ---
