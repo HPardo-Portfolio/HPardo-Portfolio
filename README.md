@@ -1,8 +1,8 @@
-\## 🔍 Encoded PowerShell Detection Lab
+## Encoded PowerShell Detection Lab
 
+> Simulated adversary behavior and detected encoded PowerShell execution using Sysmon and Splunk in a controlled lab environment.
 
-
-\### 📌 Objective
+### Objective
 
 
 
@@ -14,33 +14,17 @@ Detect encoded PowerShell execution using Sysmon logs and Splunk.
 
 
 
-\### 🛠️ Tools Used
+### Tools Used
 
 
 
-\* Windows 11 Virtual Machine
+* Windows 11 Virtual Machine
 
-\* Sysmon (SwiftOnSecurity config)
+* Sysmon (SwiftOnSecurity config)
 
-\* Splunk Enterprise
+* Splunk Enterprise
 
-\* PowerShell
-
-
-
----
-
-
-
-\### ⚙️ Lab Setup
-
-
-
-\* Installed Sysmon with custom configuration
-
-\* Forwarded logs to Splunk
-
-\* Enabled process creation logging (Event ID 1)
+* PowerShell
 
 
 
@@ -48,7 +32,23 @@ Detect encoded PowerShell execution using Sysmon logs and Splunk.
 
 
 
-\### 💀 Attack Simulation
+### Lab Setup
+
+
+
+* Installed Sysmon with custom configuration
+
+* Forwarded logs to Splunk
+
+* Enabled process creation logging (Event ID 1)
+
+
+
+---
+
+
+
+### Attack Simulation
 
 
 
@@ -68,19 +68,14 @@ powershell -enc SQBFAFgAIAAkAGUAbgB2ADoAdQBzAGUAcgBuAGEAbQBlAA==
 
 
 
-\### 🔎 Detection Query
+### Detection Query
 
-
-
-```
-
+```spl
 index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
+| rex field=_raw "<Data Name='CommandLine'>(?<cmdline>[^<]+)"
+| search cmdline="*-enc*"
+| table _time cmdline
 
-| rex field=\_raw "<Data Name='CommandLine'>(?<cmdline>\[^<]+)"
-
-| search cmdline="\*-enc\*"
-
-| table \_time cmdline
 
 ```
 
@@ -90,31 +85,15 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 
 
-\### 📊 Findings
+### Findings
 
 
 
-\* Sysmon captured PowerShell execution
+* Sysmon captured PowerShell execution
 
-\* Encoded command detected in Splunk
+* Encoded command detected in Splunk
 
-\* Raw logs used for accurate field extraction
-
-
-
----
-
-
-
-\### 🚨 Key Takeaways
-
-
-
-\* `-enc` is commonly used for obfuscation
-
-\* Raw log analysis is critical
-
-\* Regex helps extract hidden fields
+* Raw logs used for accurate field extraction
 
 
 
@@ -122,7 +101,23 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 
 
-\### 📸 Screenshots
+### Key Takeaways
+
+
+
+* `-enc` is commonly used for obfuscation
+
+* Raw log analysis is critical
+
+* Regex helps extract hidden fields
+
+
+
+---
+
+
+
+### Screenshots
 
 #### PowerShell Execution
 ![PowerShell](screenshots/01_powershell_execution.png)
@@ -138,6 +133,20 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 #### Results
 ![Results](screenshots/05_results.png)
+
+
+
+---
+
+
+
+### Skills Demonstrated
+
+- Log Analysis (Sysmon / Windows Event Logs)
+- SIEM Investigation (Splunk)
+- Threat Detection (Encoded PowerShell)
+- Regex Field Extraction
+- SOC / Blue Team Methodology
 
 
 
