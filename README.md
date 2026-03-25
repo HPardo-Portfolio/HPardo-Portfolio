@@ -80,7 +80,6 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 ```
 
 
-
 ---
 
 
