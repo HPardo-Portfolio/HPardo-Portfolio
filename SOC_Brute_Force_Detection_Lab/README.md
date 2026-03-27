@@ -1,8 +1,8 @@
-\# SOC Lab – Brute Force Detection \& Response
+# SOC Lab – Brute Force Detection \& Response
 
 
 
-\## Objective
+## Objective
 
 Simulate and detect a brute force attack using Windows Event Logs, Sysmon, and Splunk SIEM.
 
@@ -12,15 +12,15 @@ Simulate and detect a brute force attack using Windows Event Logs, Sysmon, and S
 
 
 
-\## Lab Environment
+## Lab Environment
 
-\- Windows 11 (Target)
+- Windows 11 (Target)
 
-\- Kali Linux (Attacker simulation)
+- Kali Linux (Attacker simulation)
 
-\- Splunk Enterprise (SIEM)
+- Splunk Enterprise (SIEM)
 
-\- Sysmon (Endpoint telemetry)
+- Sysmon (Endpoint telemetry)
 
 
 
@@ -28,7 +28,7 @@ Simulate and detect a brute force attack using Windows Event Logs, Sysmon, and S
 
 
 
-\## Attack Simulation
+## Attack Simulation
 
 Multiple failed login attempts were generated against a Windows user account (soclab), triggering Event ID 4625.
 
@@ -38,21 +38,21 @@ Multiple failed login attempts were generated against a Windows user account (so
 
 
 
-\## Detection
+## Detection
 
 
 
-\### Event Viewer
+### Event Viewer
 
-\- Log: Security
+- Log: Security
 
-\- Event ID: 4625
+- Event ID: 4625
 
-\- Result: Multiple failed login attempts (Audit Failure)
+- Result: Multiple failed login attempts (Audit Failure)
 
 
 
-\### Splunk Query
+### Splunk Query
 
 ```
 
@@ -68,25 +68,15 @@ index=main EventCode=4625
 
 
 
-\## Analysis
+## Analysis
 
-\- Repeated authentication failures detected
+- Repeated authentication failures detected
 
-\- Target account: soclab
+- Target account: soclab
 
-\- Source: Localhost (127.0.0.1)
+- Source: Localhost (127.0.0.1)
 
-\- Pattern consistent with brute force attack
-
-
-
----
-
-
-
-\## MITRE ATT\&CK Mapping
-
-\- T1110 – Brute Force
+- Pattern consistent with brute force attack
 
 
 
@@ -94,9 +84,9 @@ index=main EventCode=4625
 
 
 
-\## Impact
+## MITRE ATT\&CK Mapping
 
-\- Account locked due to multiple failed login attempts
+- T1110 – Brute Force
 
 
 
@@ -104,11 +94,21 @@ index=main EventCode=4625
 
 
 
-\## Response \& Remediation
+## Impact
 
-\- Accessed system via Safe Mode
+- Account locked due to multiple failed login attempts
 
-\- Re-enabled account:
+
+
+---
+
+
+
+## Response \& Remediation
+
+- Accessed system via Safe Mode
+
+- Re-enabled account:
 
 ```
 
@@ -116,9 +116,9 @@ net user soclab /active:yes
 
 ```
 
-\- Reset password
+- Reset password
 
-\- Disabled lockout threshold:
+- Disabled lockout threshold:
 
 ```
 
@@ -132,35 +132,17 @@ net accounts /lockoutthreshold:0
 
 
 
-\## Screenshots
+## Screenshots
 
 
 
-!\[Event Viewer 4625](screenshots/eventviewer\_4625.png)
+![Event Viewer 4625](screenshots/eventviewer\_4625.png)
 
-!\[Splunk Logs](screenshots/splunk\_4625.png)
+![Splunk Logs](screenshots/splunk\_4625.png)
 
-!\[Sysmon Logs](screenshots/sysmon\_logs.png)
+![Sysmon Logs](screenshots/sysmon\_logs.png)
 
-!\[Account Locked](screenshots/locked\_account.png)
-
-
-
----
-
-
-
-\## Skills Demonstrated
-
-\- Log analysis (Windows Event Logs)
-
-\- SIEM investigation (Splunk)
-
-\- Threat detection
-
-\- Incident response
-
-\- MITRE ATT\&CK mapping
+![Account Locked](screenshots/locked\_account.png)
 
 
 
@@ -168,7 +150,25 @@ net accounts /lockoutthreshold:0
 
 
 
-\## Summary
+## Skills Demonstrated
+
+- Log analysis (Windows Event Logs)
+
+- SIEM investigation (Splunk)
+
+- Threat detection
+
+- Incident response
+
+- MITRE ATT\&CK mapping
+
+
+
+---
+
+
+
+## Summary
 
 This lab demonstrates the detection and response to a brute force attack using real-world SOC workflows, including log analysis, SIEM correlation, and system remediation.
 
