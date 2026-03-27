@@ -46,9 +46,9 @@ Identify open ports and services running on the target system.
 
 The scan revealed several services running on the target machine:
 
-- FTP – vsftpd 2.3.4
-- SSH – OpenSSH
-- HTTP – Apache web server
+- FTP – vsftpd 2.3.4  
+- SSH – OpenSSH  
+- HTTP – Apache web server  
 
 The FTP service version is known to contain a backdoor vulnerability.
 
@@ -89,20 +89,20 @@ uid=0(root) gid=0(root)
 ---
 
 ## Skills Demonstrated
-- Network reconnaissance
-- Service enumeration
-- Vulnerability identification
-- Basic exploitation
-- Security documentation
+- Network reconnaissance  
+- Service enumeration  
+- Vulnerability identification  
+- Basic exploitation  
+- Security documentation  
 
 ---
 
 ## Tools Used
-- Kali Linux
-- Metasploitable2
-- Nmap
-- Metasploit Framework
-- VirtualBox
+- Kali Linux  
+- Metasploitable2  
+- Nmap  
+- Metasploit Framework  
+- VirtualBox  
 
 ---
 
