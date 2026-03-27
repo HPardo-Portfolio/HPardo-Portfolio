@@ -119,19 +119,19 @@ index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational"
 ### Screenshots
 
 #### PowerShell Execution
-01_powershell_execution.png
+![PowerShell Execution](01_powershell_execution.png)
 
 #### Encoded Command
-02_encoded_command.png
+![Encoded Command](02_encoded_command.png)
 
 #### Splunk Raw Event
-03_splunk_raw_event.png
+![Splunk Raw Event](03_splunk_raw_event.png)
 
 #### Detection Query
-04_detection_query.png
+![Detection Query](04_detection_query.png)
 
 #### Results
-05_results.png
+![Results](05_results.png)
 
 
 
