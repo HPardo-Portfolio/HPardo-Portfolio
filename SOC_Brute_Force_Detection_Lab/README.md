@@ -66,15 +66,15 @@ net accounts /lockoutthreshold:0
 
 ## Screenshots
 
-![Lab Setup](screenshots/lab01_01_setup.png)
-![Sysmon Logs](screenshots/lab01_02_eventviewer_sysmon.png)
-![Brute Force Attempts](screenshots/lab01_03_eventviewer_bruteforce_attempt.png)
-![Splunk Ready](screenshots/lab01_04_splunk_ready.png)
-![Splunk Detection](screenshots/lab01_05_splunk_detection.png)
-![Splunk Event Details](screenshots/lab01_06_splunk_event_details.png)
-![Account Lockout](screenshots/lab01_07_account_lockout.png)
-![Safe Mode Recovery](screenshots/lab01_08_safe_mode_recovery.png)
-![Account Unlock Command](screenshots/lab01_09_account_unlock_cmd.png)
+![Lab Setup](lab01_01_setup.png)
+![Sysmon Logs](lab01_02_eventviewer_sysmon.png)
+![Brute Force Attempts](lab01_03_eventviewer_bruteforce_attempt.png)
+![Splunk Ready](lab01_04_splunk_ready.png)
+![Splunk Detection](lab01_05_splunk_detection.png)
+![Splunk Event Details](lab01_06_splunk_event_details.png)
+![Account Lockout](lab01_07_account_lockout.png)
+![Safe Mode Recovery](lab01_08_safe_mode_recovery.png)
+![Account Unlock Command](lab01_09_account_unlock_cmd.png)
 
 ---
 
