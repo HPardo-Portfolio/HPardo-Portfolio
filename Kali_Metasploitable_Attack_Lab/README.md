@@ -3,7 +3,9 @@
 ## Lab Objective
 The objective of this lab was to simulate a real-world attack scenario in a controlled virtual environment.
 
-The exercise included reconnaissance, service enumeration, and exploitation of a vulnerable service. This lab demonstrates the fundamental penetration testing workflow: identifying exposed services, detecting vulnerabilities, and exploiting them to gain unauthorized access.
+This lab demonstrates a complete attack chain from reconnaissance to exploitation, showing how vulnerable services can be identified and leveraged to gain unauthorized access.
+
+The exercise included reconnaissance, service enumeration, and exploitation of a vulnerable service, reflecting a fundamental penetration testing workflow.
 
 ---
 
