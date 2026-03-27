@@ -136,13 +136,13 @@ net accounts /lockoutthreshold:0
 
 
 
-![Event Viewer 4625](screenshots/eventviewer\_4625.png)
+![Event Viewer 4625](screenshots/eventviewer_4625.png)
 
-![Splunk Logs](screenshots/splunk\_4625.png)
+![Splunk Logs](screenshots/splunk_4625.png)
 
-![Sysmon Logs](screenshots/sysmon\_logs.png)
+![Sysmon Logs](screenshots/sysmon_logs.png)
 
-![Account Locked](screenshots/locked\_account.png)
+![Account Locked](screenshots/locked_account.png)
 
 
 
