@@ -14,6 +14,17 @@ Focused on identifying attacker behavior, analyzing security events, and support
 
 ---
 
+## Core Skills
+
+- SIEM Monitoring & Alert Triage
+- Log Analysis (Windows Event Logs, Sysmon)
+- Threat Detection & Investigation
+- Incident Documentation & Escalation
+- Network Traffic Analysis
+- MITRE ATT&CK Framework (Basic Mapping)
+
+---
+
 ## Featured Labs
 
 ### 1. Encoded PowerShell Detection Lab
@@ -83,9 +94,11 @@ Skills:
 
 ## Currently Working On
 
-- Expanding SOC detection scenarios
-- Building advanced Splunk queries
-- Developing incident response playbooks
+- Building advanced detection use cases using Splunk and Sysmon
+- Expanding Wazuh-based monitoring and alerting scenarios
+- Developing structured incident response workflows and documentation
+- Enhancing home lab with realistic attack simulations (privilege escalation, lateral movement, persistence)
+- Continuously improving log analysis and threat hunting skills
 
 ---
 
