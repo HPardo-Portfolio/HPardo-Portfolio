@@ -1,6 +1,6 @@
 # Hernan Pardo – Cybersecurity Portfolio
 
-SOC Analyst | Cybersecurity | Threat Detection | SIEM (Splunk) | Log Analysis
+SOC Analyst | Cybersecurity | Threat Detection | SIEM (Splunk, Wazuh) | Log Analysis
 
 ---
 
