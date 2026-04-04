@@ -55,16 +55,29 @@ Skills:
 
 ---
 
+### 4. Wazuh SOC Lab – Detection and Event Analysis
+
+Security Operations Center (SOC) workflow using Wazuh and Sysmon to detect and analyze suspicious activity on a Windows endpoint.
+
+Skills:
+
+- Wazuh agent deployment
+- Endpoint telemetry collection
+- Event analysis
+- Detection validation
+- Windows security monitoring
+
+[View Lab](./Wazuh_SOC_Lab)
+
+---
+
 ## Tools & Technologies
 
-- Splunk (SIEM)
-- Sysmon
-- Wireshark
-- Nmap
-- Metasploit
-- Windows Event Logs
-- Kali Linux
-- VirtualBox
+- SIEM: Splunk, Wazuh  
+- Endpoint Monitoring: Sysmon, Windows Event Logs  
+- Network Analysis: Wireshark, Nmap  
+- Offensive Security: Metasploit, Kali Linux  
+- Virtualization: VirtualBox  
 
 ---
 
