@@ -1,16 +1,18 @@
 # Hernan Pardo – Cybersecurity Portfolio
 
-SOC Analyst | Cybersecurity | Threat Detection | SIEM (Splunk, Wazuh) | Log Analysis
+SOC Analyst | Threat Detection | SIEM (Splunk, Wazuh) | Incident Analysis  
+Orlando, FL | Open to Entry-Level SOC / IT Security Roles
 
 ---
 
 ## About Me
 
-U.S. Navy veteran transitioning into cybersecurity with hands-on experience in Security Operations Center (SOC) workflows. 
+U.S. Navy veteran transitioning into cybersecurity with hands-on experience building and working in SOC-style lab environments.
 
-Skilled in log analysis, threat detection, and incident response through practical lab environments using tools such as Splunk, Sysmon, Wireshark, and Nmap.
+I’ve developed practical skills in log analysis, threat detection, and incident investigation using tools like Splunk, Wazuh, Sysmon, Wireshark, and Nmap. Through these labs, I’ve simulated real-world attack scenarios, analyzed endpoint activity, and validated detection capabilities.
 
-Focused on identifying attacker behavior, analyzing security events, and supporting detection and response processes aligned with real-world SOC operations.
+I’m particularly interested in understanding attacker behavior, identifying suspicious activity, and contributing to detection and response efforts within a SOC environment.
+
 
 ---
 
@@ -27,36 +29,28 @@ Focused on identifying attacker behavior, analyzing security events, and support
 
 ## Featured Labs
 
-### 1. Encoded PowerShell Detection Lab
-Detection of obfuscated PowerShell execution using Sysmon logs and Splunk SIEM.
+### 1. Wazuh SOC Lab – Detection and Event Analysis
 
-Skills:
-- Log analysis (Sysmon)
-- SIEM investigation (Splunk)
-- Regex field extraction
-- Threat detection
+End-to-end SOC workflow using Wazuh and Sysmon to monitor, detect, and analyze activity on a Windows endpoint.
 
-[View Lab](./Encoded_PowerShell_Detection)
+**Skills:**
 
----
+- Wazuh agent deployment
+- Endpoint telemetry collection
+- Event correlation and alert analysis
+- Process creation analysis (Sysmon Event ID 1)
+- Detection validation
+- Windows security monitoring
 
-### 2. Kali Linux vs Metasploitable Attack Simulation
-Simulated attack chain from reconnaissance to exploitation using Nmap and Metasploit.
+[View Lab](./Wazuh_SOC_Lab)
 
-Skills:
-- Network reconnaissance
-- Service enumeration
-- Vulnerability exploitation
-- Penetration testing fundamentals
-
-[View Lab](./Kali_Metasploitable_Attack_Lab)
 
 ---
 
-### 3. SOC Lab – Brute Force Detection & Response
+### 2. SOC Lab – Brute Force Detection & Response
 Detection and response to brute force attack using Windows Event Logs and Splunk.
 
-Skills:
+**Skills:**
 - Log analysis (Windows Event Logs)
 - SIEM correlation
 - Incident response
@@ -64,21 +58,34 @@ Skills:
 
 [View Lab](./SOC_Brute_Force_Detection_Lab)
 
+
 ---
 
-### 4. Wazuh SOC Lab – Detection and Event Analysis
+### 3. Encoded PowerShell Detection Lab
+Detection of obfuscated PowerShell execution using Sysmon logs and Splunk SIEM.
 
-Security Operations Center (SOC) workflow using Wazuh and Sysmon to detect and analyze suspicious activity on a Windows endpoint.
+**Skills:**
+- Log analysis (Sysmon)
+- SIEM investigation (Splunk)
+- Regex field extraction
+- Threat detection
 
-Skills:
+[View Lab](./Encoded_PowerShell_Detection)
 
-- Wazuh agent deployment
-- Endpoint telemetry collection
-- Event analysis
-- Detection validation
-- Windows security monitoring
 
-[View Lab](./Wazuh_SOC_Lab)
+---
+
+### 4. Kali Linux vs Metasploitable Attack Simulation
+Simulated attack chain from reconnaissance to exploitation using Nmap and Metasploit.
+
+**Skills:**
+- Network reconnaissance
+- Service enumeration
+- Vulnerability exploitation
+- Penetration testing fundamentals
+
+[View Lab](./Kali_Metasploitable_Attack_Lab)
+ 
 
 ---
 
@@ -94,12 +101,12 @@ Skills:
 
 ## Currently Working On
 
-- Building advanced detection use cases using Splunk and Sysmon
-- Expanding Wazuh-based monitoring and alerting scenarios
-- Developing structured incident response workflows and documentation
-- Enhancing home lab with realistic attack simulations (privilege escalation, lateral movement, persistence)
-- Continuously improving log analysis and threat hunting skills
+- Building advanced detection use cases using Splunk and Wazuh  
+- Expanding home lab with realistic attack simulations (privilege escalation, lateral movement, persistence)  
+- Developing structured incident response workflows and documentation  
+- Strengthening log analysis and threat hunting skills
 
+  
 ---
 
 ## Contact
